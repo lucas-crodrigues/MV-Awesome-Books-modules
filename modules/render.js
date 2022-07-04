@@ -6,7 +6,7 @@ const booksList = document.getElementById('booksList');
 const addBook = document.getElementById('addBook');
 
 export default class Render {
-  static renderBooks() {
+  static renderBooks = () => {
     AddDate.addDate();
     const booksContainer = document.getElementById('books-container');
     booksContainer.innerHTML = BookCollection.markupAllBooks();
