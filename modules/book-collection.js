@@ -31,7 +31,7 @@ export default class BookCollection {
     return books;
   }
 
-  static markupAllBooks() {
+  static markupAllBooks = () => {
     let allBooksHTML = '';
     this.getLocalStorage().forEach((book, index) => {
       allBooksHTML += `<div class="book" id="${book.title}">
